@@ -1,41 +1,56 @@
 import styles from "./page.module.css";
-import './globals.css';
-import Header from "@/components/Header";
+import "./globals.css";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-
       {/* added background colors and set height to 100vh for now to differentiate the sections */}
-
 
       {/* Header */}
       <Header />
 
       {/* Landing Page */}
-      <section id="home" style={{ height: '100vh', background: '#f0f0f0' }}>
-        <h1>landing page</h1>
+      <section
+        id="home"
+        style={{ height: `calc(100vh - 131px)`, background: "black" }}
+      >
+        <Hero />
+        <div style={{ position: "relative", width: "100%", height: "30%" }}>
+          <img
+            style={{
+              position: "absolute",
+              width: "100%",
+
+              bottom: "-25px",
+            }}
+            src={"landing-page/skyline.svg"}
+            alt={"Skyline"}
+            color="white"
+          />
+        </div>
       </section>
 
       {/* About Section */}
-      <section id="about" style={{ height: '100vh', background: '#dcdcdc' }}>
+      <section id="about" style={{ height: "100vh", background: "#dcdcdc" }}>
         <h1>about</h1>
       </section>
 
       {/* Past Events Section */}
-      <section id="services" style={{ height: '100vh', background: '#e0e0e0' }}>
+      <section id="services" style={{ height: "100vh", background: "#e0e0e0" }}>
         <h1>past events</h1>
       </section>
 
       {/* Sponsors Section */}
-      <section id="contact" style={{ height: '100vh', background: '#ccc' }}>
+      <section id="contact" style={{ height: "100vh", background: "#ccc" }}>
         <h1>sponsors</h1>
       </section>
-      
+
       {/* Footer */}
       <Footer />
     </div>
-    
   );
 }
