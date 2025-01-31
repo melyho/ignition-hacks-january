@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import './globals.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -29,8 +30,8 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section id="contact" style={{ height: '100vh', background: '#ccc' }}>
-        <h1>sponsors</h1>
+      <section id="contact" style={{ height: '180vh', background: '#1b1d1f' }}>
+        <Sponsors />
       </section>
       
       {/* Footer */}
