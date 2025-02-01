@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Image from "next/image";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
               position: "absolute",
               width: "100%",
 
-              bottom: "-25px",
+              bottom: "0vh",
             }}
             src={"landing-page/skyline.svg"}
             alt={"Skyline"}
@@ -35,8 +36,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" style={{ height: "100vh", background: "#dcdcdc" }}>
-        <h1>about</h1>
+      <section id="about" style={{ height: "100vh", background: "black" }}>
+        <About />
       </section>
 
       {/* Past Events Section */}
