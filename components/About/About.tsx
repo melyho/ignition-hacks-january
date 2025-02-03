@@ -21,21 +21,44 @@ const About = (props: Props) => {
           color: "white",
         }}
       >
-        <h1 style={{ marginBottom: "5vh", fontSize: "3rem" }}>
+        <h1
+          style={{ marginBottom: "5vh", fontSize: "3rem", fontWeight: "bold" }}
+        >
           What is Ignition Hacks?
         </h1>
-        <p style={{ marginBottom: "3vh", fontSize: "1rem" }}>
+        <p
+          style={{
+            marginBottom: "3vh",
+            fontSize: "1rem",
+            color: "#FFA4DD",
+            fontWeight: "bold",
+          }}
+        >
           Ignition Hacks is a student-led hackathon dedicated to empowering the
           next generation of innovators, problem solvers, coders, and
           entrepreneurs to pursue their passion for global change.
         </p>
-        <p style={{ marginBottom: "3vh", fontSize: "1rem" }}>
+        <p
+          style={{
+            marginBottom: "3vh",
+            fontSize: "1rem",
+            color: "#FFA4DD",
+            fontWeight: "bold",
+          }}
+        >
           This year, we are creating more than just a hackathon, we want to use
           our platform to build an organization aimed at supporting tech
           education and opportunities for students to help them prepare for a
           growing technology industry.
         </p>
-        <p style={{ marginBottom: "10px", fontSize: "1rem" }}>
+        <p
+          style={{
+            marginBottom: "10px",
+            fontSize: "1rem",
+            color: "#FFA4DD",
+            fontWeight: "bold",
+          }}
+        >
           Last year, we supported 600+ participants internationally within a
           hackathon environment offering activities such as 15+ workshops on the
           varying industries in tech, 1-1 mentorship opportunities, co-op fairs,

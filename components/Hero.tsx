@@ -20,7 +20,9 @@ const Hero = (props: Props) => {
       }}
     >
       <h1 style={{ fontSize: "4rem" }}>Ignition Hacks</h1>
-      <h2 style={{ fontSize: "2rem" }}>in-person hackathon / July 2025</h2>
+      <h2 style={{ fontSize: "2rem", color: "#FFA4DD" }}>
+        in-person hackathon / July 2025
+      </h2>
       <button
         style={{
           marginTop: "1vh",

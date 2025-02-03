@@ -15,10 +15,7 @@ export default function Home() {
       <Header />
 
       {/* Landing Page */}
-      <section
-        id="home"
-        style={{ height: `calc(100vh - 131px)`, background: "black" }}
-      >
+      <section id="home" style={{ height: `calc(100vh - 131px)` }}>
         <Hero />
         <div style={{ position: "relative", width: "100%", height: "30%" }}>
           <img
@@ -36,7 +33,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" style={{ height: "100vh", background: "black" }}>
+      <section id="about" style={{ height: "100vh" }}>
         <About />
       </section>
 

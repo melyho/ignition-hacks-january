@@ -12,7 +12,6 @@ export default function Header() {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
-            backgroundColor: "black",
             padding: "3rem",
             width: "100%",
             paddingBottom: "1rem",
