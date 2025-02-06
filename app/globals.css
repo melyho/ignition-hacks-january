@@ -1,5 +1,6 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap");
 :root {
-  --background: #ffffff;
+  --background: #1c1d1f;
   --foreground: #171717;
 }
 
@@ -11,18 +12,19 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: 'Satoshi', sans-serif;
+  background: #1c1d1f;
+  font-family: "Satoshi", sans-serif;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Satoshi";
+  font-style: "normal";
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
