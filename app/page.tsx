@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import './globals.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Carousel from "@/components/past-events"
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
       </section>
 
       {/* Past Events Section */}
-      <section id="services" style={{ height: '100vh', background: '#e0e0e0' }}>
-        <h1>past events</h1>
+      <section id="services" style={{ height: 'fit-content', background: '#e0e0e0' }}>
+        <Carousel />
+
       </section>
 
       {/* Sponsors Section */}
