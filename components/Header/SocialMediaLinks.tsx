@@ -16,6 +16,7 @@ const SocialMediaLinks = (props: Props) => {
     >
       {socialMediaItems.map((socialMediaItem) => (
         <Link
+          key={socialMediaItem.href}
           style={{ display: "block", padding: "1rem" }}
           href={socialMediaItem.href}
         >

@@ -151,7 +151,7 @@ const Carousel: React.FC = () => {
         </div>
 
         <div className="event-footer-container">
-            <div className="event-footer">There's more to come!</div>
+            <div className="event-footer">There&apos;s more to come!</div>
             <div className="event-footer-text">Follow our Instagram to keep up with all updates and be the first to know when hacker applications are open!</div>
             <a href="https://www.instagram.com/ignitionhacks" target="_blank" className="instagram-button">
                 <span>Visit our Instagram</span>

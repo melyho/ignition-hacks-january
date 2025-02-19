@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-const NavLinks = (props: Props) => {
+const NavLinks = () => {
   return (
     <div
       style={{
@@ -23,7 +21,7 @@ const NavLinks = (props: Props) => {
         alt="logo"
       />
       {navItems.map((navItem) => (
-        <div style={{ padding: "1rem", color: "white" }}>
+        <div key={navItem.href} style={{ padding: "1rem", color: "white" }}>
           <Link href={navItem.href}>{navItem.label}</Link>
         </div>
       ))}
