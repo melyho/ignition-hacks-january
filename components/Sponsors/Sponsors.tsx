@@ -22,7 +22,7 @@ export default function Sponsors() {
                         <img src="/sponsors/sponsor-logos/Group 272.png" width="90%"/>
                     </div>
                     <div className="sponsor-box">
-                        <img src="/sponsors/sponsor-logos/Mask Group.png" width="85%"/>  
+                        <img src="/sponsors/sponsor-logos/Mask group.png" width="85%"/>  
                     </div>
                     <div className="sponsor-box">
                         <img src="/sponsors/sponsor-logos/theKapCo 1.png" width="100%"/>
