@@ -16,17 +16,17 @@ export const navItems = [
 export const socialMediaItems = [
   {
     icon: "landing-page/ig.svg",
-    href: "",
+    href: "https://www.instagram.com/ignitionhacks/",
     alt: "Instagram",
   },
   {
     icon: "landing-page/linkedin.svg",
-    href: "",
+    href: "https://www.linkedin.com/company/ignition-hacks/",
     alt: "Linkedin",
   },
   {
     icon: "landing-page/mail.svg",
-    href: "",
+    href: "mailto:ignitionhacks@gmail.com",
     alt: "Mail",
   },
 ];

@@ -5,11 +5,13 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import About from "@/components/About/About";
+import Carousel from "@/components/past-events/past-events"
+import Sponsors from "@/components/Sponsors/Sponsors";
 
 export default function Home() {
+  
   return (
     <div>
-      {/* added background colors and set height to 100vh for now to differentiate the sections */}
 
       {/* Header */}
       <Header />
@@ -37,14 +39,13 @@ export default function Home() {
         <About />
       </section>
 
-      {/* Past Events Section */}
-      <section id="services" style={{ height: "100vh", background: "#e0e0e0" }}>
-        <h1>past events</h1>
+      <section id="events" style={{ height: 'fit-content'}}>
+        <Carousel/>
       </section>
 
       {/* Sponsors Section */}
-      <section id="contact" style={{ height: "100vh", background: "#ccc" }}>
-        <h1>sponsors</h1>
+      <section id="sponsors" style={{ height: "fit-content"}}>
+       <Sponsors/>
       </section>
 
       {/* Footer */}

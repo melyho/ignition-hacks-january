@@ -1,0 +1,228 @@
+
+.events {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 'Satoshi', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 50%;
+    margin: 20px 30px;
+    background-color: transparent;
+    padding-bottom: 10vh;
+    
+  }
+  
+  .carousel-title {
+    font: inherit;
+    margin: 20px 30px;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .carousel-content {
+    width: fit-content;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .arrow:hover {
+    color: #FFA4DD;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #FFA4DD;
+  }
+
+  .about-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+   
+}
+  
+  .about-title {
+    font: inherit;
+    margin: 20px 30px;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .about-wrapper {
+    position: relative;
+    width: 80%;
+  }
+  
+  .about-items {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .about-item {
+    border-radius: 10px;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    width: 25%;
+    max-width: 150px;
+  }
+  
+  .about-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 10px 20px rgba(50, 120, 255, 0.017));
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: white;
+    padding:1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .about-item-img-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .about-item-img {
+    display: block;
+    padding: 0.2rem;
+    width: 100%;
+    max-height: 100%;
+  }
+  
+  .about-item-title-wrap {
+    margin-top: 0;
+    padding: 8px;
+  }
+  
+  .about-item-title {
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .about-item-text-wrap {
+    padding: 20px 30px 30px;
+  }
+  
+  .about-item-text {
+    font-family: inherit;
+    color: #252e48;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .about-items {
+      flex-direction: column;
+    }
+  }
+
+  .event-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .event-footer {
+    font: inherit;
+    margin: 20px 30px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  .event-footer-text {
+    color: #FFA4DD;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 70%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.instagram-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .instagram-button:hover {
+    background: white;
+    color: black;
+  }
+  

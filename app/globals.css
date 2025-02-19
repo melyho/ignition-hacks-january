@@ -1,18 +1,23 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap");
 :root {
   --background: #1c1d1f;
-  --foreground: #171717;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+
 }
 
 body {
   color: var(--foreground);
   background: #1c1d1f;
+  margin: 0;
+  height: 100vh;
+  background-image: url('http://www.w3.org/2000/svg');
+  background-size: cover; /* Adjusts the size of the SVG to cover the entire page */
+  background-repeat: repeat; /* Ensures the SVG repeats to fill the entire page */
   font-family: "Satoshi", sans-serif;
 }
 

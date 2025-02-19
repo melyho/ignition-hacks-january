@@ -22,14 +22,14 @@ const About = (props: Props) => {
         }}
       >
         <h1
-          style={{ marginBottom: "5vh", fontSize: "3rem", fontWeight: "bold" }}
+          style={{ marginBottom: "5vh", fontSize: "3rem", fontWeight: "bold", color: "#FFFFFF"}}
         >
           What is Ignition Hacks?
         </h1>
         <p
           style={{
             marginBottom: "3vh",
-            fontSize: "1rem",
+            fontSize: "1.2rem",
             color: "#FFA4DD",
             fontWeight: "bold",
           }}
@@ -41,7 +41,7 @@ const About = (props: Props) => {
         <p
           style={{
             marginBottom: "3vh",
-            fontSize: "1rem",
+            fontSize: "1.2rem",
             color: "#FFA4DD",
             fontWeight: "bold",
           }}
@@ -54,7 +54,7 @@ const About = (props: Props) => {
         <p
           style={{
             marginBottom: "10px",
-            fontSize: "1rem",
+            fontSize: "1.2rem",
             color: "#FFA4DD",
             fontWeight: "bold",
           }}
