@@ -1,6 +1,6 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap');
 
-.sponsor-box {
+.spons-box {
     background: #FFFFFF;
     box-shadow: 0px 4px 122.6px rgba(255, 255, 255, 0.37);
     border-radius: 20%;
@@ -42,7 +42,7 @@
   justify-content: center;
 }
 
-.sponsors-l {
+.spons-l {
   position: relative;
   z-index: 3;
   padding-top: 10vh;
