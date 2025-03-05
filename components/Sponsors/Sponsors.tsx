@@ -6,7 +6,7 @@ export default function Sponsors() {
             <div className="container">
                 <div className="text">
                     <h1 style={{color: "#FFFFFF" }}>Previous Sponsors</h1>
-                    <a href=""><h6 style={{color: "#FFFFFF" }}><u>Interested in becoming a sponsor?</u></h6></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCRqtpXZ09_u6IFI4qTBx7CUMCdEP0He6FyPpLwzq7BGYbmg/viewform?usp=header"><h6 style={{color: "#FFFFFF" }}><u>Interested in becoming a sponsor?</u></h6></a>
                 </div>
                 <div className="stars">
                     <img src="/sponsors/stars.svg" alt="stars" width="100%"/>
