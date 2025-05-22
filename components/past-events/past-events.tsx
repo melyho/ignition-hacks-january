@@ -140,7 +140,7 @@ const Carousel: React.FC = () => {
 
                     <div className="about-item-title-wrap">
                         <h5 className="about-item-title">
-                            13 panelists
+                            18+ panelists
                         </h5>
                     </div>
                         </div>
