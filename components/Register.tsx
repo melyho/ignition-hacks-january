@@ -21,7 +21,6 @@ export default function RegisterButton() {
         borderWidth: "2px",
         borderRadius: "8px",
         width: "15vw",
-        height: "5vh",
         textAlign: "center",
         lineHeight: "0vh",
         textDecoration: "none",
