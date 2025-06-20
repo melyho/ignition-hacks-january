@@ -2,9 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const iconClass = "w-8 h-8 hover:opacity-80";
-const iconColor = "565093";
-const sections = ["ignition", "about", "past", "faq", "sponsors"];
+const iconClass = "w-[1.5rem] h-[1.5rem] hover:scale-110 transition-transform duration-300";
+const sections = ["ignition hacks", "about", "past", "faq", "sponsors"];
 
 export default function Navbar() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,23 +39,23 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full flex justify-between items-center bg-gradient-to-b from-[#DDDDDD] via-[#FFFFFF] to-[#DDDDDD] shadow h-[10vh] border-[5px] border-[#6B6B6B]">
-      <div className="basis-1/5 h-full border-r-[5px] border-r-[#6B6B6B] flex justify-between items-center">
-        <div className="relative w-13 h-13 m-auto">
+    <nav className="sticky top-0 z-50 w-full flex justify-between items-center bg-gradient-to-b from-[#DDDDDD] via-[#FFFFFF] to-[#DDDDDD] shadow h-[12vh] border-[5px] border-[#6B6B6B]">
+      <div className="basis-1/5 border-r-[5px] border-r-[#6B6B6B] flex justify-between items-center h-full">
+        <div className="relative w-[2rem] h-[2rem] m-auto">
           <Image src="/Vector.svg" alt="Logo" fill className="object-contain" />
         </div>
       </div>
-      <div className="basis-3/5 h-full w-full px-10 pt-5">
-        <div className="relative w-full h-4 bg-gray-400 rounded-full">
+      <div className="basis-3/5 h-max w-full px-10 py-8 pt-4">
+        <div className="relative w-full h-[0.8rem] bg-gray-400 rounded-full flex-col items-start justify-start">
           {/* Purple fill */}
           <div
             ref={progressRef}
-            className="absolute h-full bg-purple-400 rounded-full transition-[width] duration-800 ease-in-out"
+            className="absolute h-full bg-[#A69DFF] rounded-full transition-[width] duration-800 ease-in-out"
             style={{ width: "10%" }}
           ></div>
 
           {/* Markers */}
-          <div className="absolute top-[120%] left-0 w-full grid grid-cols-5 gap-0 transform -translate-y-1/2">
+          <div className="absolute top-[110%] left-0 w-full grid grid-cols-5 gap-0 transform -translate-y-[1.2rem]">
             {sections.map((id, idx) => (
               <a
                 key={id}
@@ -64,13 +63,13 @@ export default function Navbar() {
                 className="flex flex-col items-center w-full"
               >
                 <div
-                  className={`w-6 h-6 mb-1 border-4 rounded-full ${
+                  className={`w-[1.3rem] h-[1.3rem] mb-1 border-[0.24rem] rounded-full hover:scale-110 transition-transform duration-300 ${
                     idx === activeIndex
-                      ? "bg-white border-black"
-                      : "bg-white border-black"
+                      ? "bg-white border-[#393939]"
+                      : "bg-white border-[#393939]"
                   }`}
                 />
-                <span className="text-sm capitalize text-center leading-tight">
+                <span className="text-[0.8rem] capitalize text-center leading-tight font-[550] text-[#1b1b1b]">
                   {id === "past" ? "Past Events" : id === "faq" ? "FAQ" : id}
                 </span>
               </a>
@@ -79,12 +78,18 @@ export default function Navbar() {
         </div>
       </div>
       <div className="basis-1/5 h-full border-l-[5px] border-l-[#6B6B6B] flex items-center justify-center">
-        <div className="flex space-x-6 items-center">
-          {/* Email */}
-          <a href="mailto:your.email@example.com" aria-label="Email">
+        <div className="flex space-x-3 items-center">
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/ignitionhacks/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <img
-              src={`https://img.icons8.com/ios-filled/50/${iconColor}/new-post.png`}
-              alt="Email"
+              src="/instagram.svg"
+              alt="Instagram"
               className={iconClass}
             />
           </a>
@@ -97,23 +102,23 @@ export default function Navbar() {
             aria-label="LinkedIn"
           >
             <img
-              src={`https://img.icons8.com/ios-filled/50/${iconColor}/linkedin.png`}
+              src="/linkedin.svg"
               alt="LinkedIn"
               className={iconClass}
             />
           </a>
 
-          {/* Instagram */}
+          {/* Mail */}
           <a
-            href="https://www.instagram.com/ignitionhacks/?hl=en"
+            href="mailto:info@ignitionhacks.org"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram"
+            aria-label="Mail"
           >
             <img
-              src={`https://img.icons8.com/ios-filled/50/${iconColor}/instagram-new.png`}
-              alt="Instagram"
-              className={iconClass}
+              src="/mail.svg"
+              alt="Mail"
+              className= "w-[auto] h-[1.3rem] hover:scale-110 transition-transform duration-300"
             />
           </a>
         </div>
