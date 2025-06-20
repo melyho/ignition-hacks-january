@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import { useState, useEffect } from "react";
-import AboutSection from "@/components/AboutSection";
 import RegisterButton from "@/components/RegisterButton";
 import Carousel from "@/components/Carousel";
 
