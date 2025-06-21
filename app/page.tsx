@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import Carousel from "@/components/carousel";
+import FaqSection from "@/components/faqSection";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -8,7 +10,7 @@ export default function Home() {
   const [showTitle, setShowTitle] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setDoorClosed(false), 800);
+    const timeout = setTimeout(() => setDoorClosed(false), 500);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -56,11 +58,11 @@ export default function Home() {
                         [mask-composite:exclude]
                         [mask-mode:alpha]
                         transition-[translate] duration-2000 ease-in-out ${
-                          doorClosed ? "-translate-x-full" : "translate-x-0"
+                          doorClosed ? "-translate-x-[70%]" : "translate-x-0"
                         }
                         `}
             >
-              <div className="absolute bg-transparent w-[70%] h-[66%] top-[7%] left-[15%] border-[10px] border-[#7072BF] z-40 rounded-[20px] bg-gradient-to-r from-[#8d8fce] to-[#8A87D5]" />
+              <div className="absolute bg-transparent w-[70%] h-[66%] top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-[10px] border-[#7072BF] z-40 rounded-[20px] bg-gradient-to-r from-[#8d8fce] to-[#8A87D5]" />
               <div className="absolute right-0 top-0 h-full w-[8px] bg-gradient-to-b from-[#6C6C6C] to-[#100F0F] z-30" />
               <div className="mt-[72vh] mx-auto px-4 pt-2 pb-0 bg-[#3A3358] w-fit text-white ">
                 <div className="border-t-2 border-white py-2">
@@ -76,11 +78,11 @@ export default function Home() {
                         [mask-composite:exclude]
                         [mask-mode:alpha]
                         transition-[translate] duration-2000 ease-in-out ${
-                          doorClosed ? "-translate-x-[-100%]" : "translate-x-0"
+                          doorClosed ? "-translate-x-[-70%]" : "translate-x-0"
                         }
                         `}
             >
-              <div className="absolute bg-transparent w-[70%] h-[66%] top-[7%] left-[15%] border-[10px] border-[#7072BF] z-40 rounded-[20px] bg-gradient-to-r from-[#8d8fce] to-[#8A87D5]" />
+              <div className="absolute bg-transparent w-[70%] h-[66%] top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-[10px] border-[#7072BF] z-40 rounded-[20px] bg-gradient-to-r from-[#8d8fce] to-[#8A87D5]" />
               <div className="absolute left-0 top-0 h-full w-[8px] bg-gradient-to-b from-[#6C6C6C] to-[#100F0F] z-30" />
               <div className="mt-[72vh] mx-auto px-4 pt-2 pb-0 bg-[#3A3358] w-fit text-white ">
                 <div className="border-t-2 border-white py-2">
@@ -118,26 +120,66 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="w-full h-[40vh]">
+          <div className="relative w-full h-full bg-[linear-gradient(180deg,#605471,#010101)]">
+            <div className="absolute top-0 left-0 h-full w-[24%] transform origin-top-left skew-x-[-30deg] border-r-[8px] bg-black border-r-transparent [border-image:linear-gradient(180deg,#393045,#010101)_1]" />
+            <div className="absolute top-0 right-0 h-full w-[24%] transform origin-top-right skew-x-[30deg] bg-black border-l-[8px] border-l-transparent [border-image:linear-gradient(180deg,#393045,#010101)_1]" />
+            <div className="absolute top-0 right-[50%] translate-x-[50%] h-[14px] w-[calc(52%+14px)] bg-[#393045]" />
+          </div>
+        </section>
+
         {/* Other Sections */}
         <section
           id="about"
-          className="h-[100vh] text-center flex items-center justify-center border px-6"
+          className="text-center flex flex-col items-center justify-center  py-[7vh]"
         >
-          <h2 className="text-3xl font-semibold m-auto">About Page</h2>
+          <div className="flex flex-col gap-[4vh] text-white max-w-[70vw] mx-auto px-4 text-[1.5vw]">
+            <h2 className="text-[3vw] font-semibold m-auto text-white">
+              What is Ignition Hacks?
+            </h2>
+            <p>
+              Ignition Hacks is a student-led hackathon built to empower the
+              next generation of innovative minds.
+            </p>
+
+            <p>
+              This year, we are creating more than just a hackathon, we want to
+              use our platform to build an organization supporting education and
+              opportunities for students to help.
+            </p>
+
+            <p>
+              Last year, we supported 600+ participants internationally offering
+              15+ workshops, 1-on-1 mentorship opportunities, and co-op fairs
+              all while fostering a career-forward environment.
+            </p>
+
+            <button className="w-[40%] mx-auto mt-6 px-8 py-3 border-2 border-white rounded-xl text-white font-bold text-[2vw] hover:bg-white cursor-pointer hover:text-black transition">
+              Register Here
+            </button>
+          </div>
+
+          <div className="relative w-full aspect-[2.5/1] mt-[20vh] bg-[url('/Stats.svg')] bg-cover bg-center">
+          </div>
         </section>
 
         <section
           id="past"
-          className="h-[100vh] text-center flex items-center justify-center border px-6"
+          className="text-center flex items-center justify-center"
         >
-          <h2 className="text-3xl font-semibold">Past Events Page</h2>
+          <div className="relative w-[70%] aspect-[1.2/1] mt-[20vh] bg-[linear-gradient(180deg,#000000,#434343,#2B2B2B)]">
+            <Carousel />
+            <Image src="/Carousel.svg" alt="Logo" fill className="absolute" />
+          </div>
         </section>
 
         <section
           id="faq"
-          className="h-[100vh] text-center flex items-center justify-center border px-6"
+          className="w-full text-center flex items-center justify-center"
         >
-          <h2 className="text-3xl font-semibold m-auto">FAQ</h2>
+          <div className="relative w-full aspect-[1.2/1] bg-[url('/FAQ.svg')] bg-cover bg-center">
+            <FaqSection />
+          </div>
         </section>
 
         <section

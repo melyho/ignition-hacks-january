@@ -70,7 +70,7 @@ export default function Navbar() {
                       : "bg-white border-black"
                   }`}
                 />
-                <span className="text-sm capitalize text-center leading-tight">
+                <span className="text-sm text-black font-semibold capitalize text-center leading-tight">
                   {id === "past" ? "Past Events" : id === "faq" ? "FAQ" : id}
                 </span>
               </a>
